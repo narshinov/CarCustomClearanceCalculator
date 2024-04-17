@@ -8,17 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		07B9D7812BD0479000F73826 /* CarCustomCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7802BD0479000F73826 /* CarCustomCalculatorApp.swift */; };
-		07B9D7832BD0479000F73826 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7822BD0479000F73826 /* ContentView.swift */; };
+		07B9D7832BD0479000F73826 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7822BD0479000F73826 /* CalculatorView.swift */; };
 		07B9D7852BD0479300F73826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B9D7842BD0479300F73826 /* Assets.xcassets */; };
 		07B9D7882BD0479300F73826 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07B9D7872BD0479300F73826 /* Preview Assets.xcassets */; };
+		07B9D7902BD0559D00F73826 /* EngineType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D78F2BD0559D00F73826 /* EngineType.swift */; };
+		07B9D7922BD055AE00F73826 /* AgeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7912BD055AE00F73826 /* AgeType.swift */; };
+		07B9D7942BD055BE00F73826 /* PersonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7932BD055BE00F73826 /* PersonType.swift */; };
+		07B9D7982BD05DEC00F73826 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7972BD05DEC00F73826 /* View+Extension.swift */; };
+		07B9D79A2BD05EAF00F73826 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7992BD05EAF00F73826 /* FAQView.swift */; };
+		07B9D7A42BD0664B00F73826 /* HideViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		07B9D77D2BD0479000F73826 /* CarCustomCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarCustomCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07B9D7802BD0479000F73826 /* CarCustomCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCustomCalculatorApp.swift; sourceTree = "<group>"; };
-		07B9D7822BD0479000F73826 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07B9D7822BD0479000F73826 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		07B9D7842BD0479300F73826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07B9D7872BD0479300F73826 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07B9D78F2BD0559D00F73826 /* EngineType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineType.swift; sourceTree = "<group>"; };
+		07B9D7912BD055AE00F73826 /* AgeType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeType.swift; sourceTree = "<group>"; };
+		07B9D7932BD055BE00F73826 /* PersonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonType.swift; sourceTree = "<group>"; };
+		07B9D7952BD056A800F73826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		07B9D7972BD05DEC00F73826 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		07B9D7992BD05EAF00F73826 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
+		07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +64,13 @@
 		07B9D77F2BD0479000F73826 /* CarCustomCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				07B9D7A22BD0664000F73826 /* ViewModifiers */,
+				07B9D7962BD05DD200F73826 /* Extensions */,
+				07B9D7952BD056A800F73826 /* Info.plist */,
+				07B9D78E2BD0559200F73826 /* Models */,
 				07B9D7802BD0479000F73826 /* CarCustomCalculatorApp.swift */,
-				07B9D7822BD0479000F73826 /* ContentView.swift */,
+				07B9D7822BD0479000F73826 /* CalculatorView.swift */,
+				07B9D7992BD05EAF00F73826 /* FAQView.swift */,
 				07B9D7842BD0479300F73826 /* Assets.xcassets */,
 				07B9D7862BD0479300F73826 /* Preview Content */,
 			);
@@ -65,6 +83,32 @@
 				07B9D7872BD0479300F73826 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07B9D78E2BD0559200F73826 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				07B9D78F2BD0559D00F73826 /* EngineType.swift */,
+				07B9D7912BD055AE00F73826 /* AgeType.swift */,
+				07B9D7932BD055BE00F73826 /* PersonType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		07B9D7962BD05DD200F73826 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				07B9D7972BD05DEC00F73826 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		07B9D7A22BD0664000F73826 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07B9D7832BD0479000F73826 /* ContentView.swift in Sources */,
+				07B9D7902BD0559D00F73826 /* EngineType.swift in Sources */,
+				07B9D7832BD0479000F73826 /* CalculatorView.swift in Sources */,
+				07B9D7942BD055BE00F73826 /* PersonType.swift in Sources */,
 				07B9D7812BD0479000F73826 /* CarCustomCalculatorApp.swift in Sources */,
+				07B9D79A2BD05EAF00F73826 /* FAQView.swift in Sources */,
+				07B9D7A42BD0664B00F73826 /* HideViewModifier.swift in Sources */,
+				07B9D7982BD05DEC00F73826 /* View+Extension.swift in Sources */,
+				07B9D7922BD055AE00F73826 /* AgeType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,11 +325,13 @@
 				DEVELOPMENT_TEAM = 8C43Q4V22B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarCustomCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +356,13 @@
 				DEVELOPMENT_TEAM = 8C43Q4V22B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CarCustomCalculator/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
