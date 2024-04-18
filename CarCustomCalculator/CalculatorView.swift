@@ -15,6 +15,9 @@ struct CalculatorView: View {
     @State private var capacity: String = ""
     @State private var benifit: Bool = false
     @State private var isHidden = true
+    @State private var dutyRate = ""
+    
+    let calculatorService: CalculatorServiceProtocol = CalculatorService()
 
     var body: some View {
         NavigationView {
@@ -53,15 +56,19 @@ struct CalculatorView: View {
                 Section("Объём двигателя, см³") {
                     TextField("напр. 2000", text: $capacity)
                         .keyboardType(.numberPad)
+                        
                 }
+                .isHidden(isEngineCapacityHidden)
                 
                 Section {
                     Toggle("Таможенная льгота 50% (Указ №140)", isOn: $benifit)
                 }
+                .isHidden(isBenifitHidden)
+                
                 
                 Section {
                     Button("Рассчитать стоимость") {
-                        isHidden = false
+                        calculate()
                     }
                     .font(.title3)
                     .foregroundStyle(.white)
@@ -71,7 +78,7 @@ struct CalculatorView: View {
                 .listRowBackground(Color.green)
                 
                 Section("Таможенная пошлина") {
-                    Text("6 000 EUR")
+                    Text(dutyRate)
                 }.isHidden(isHidden)
             }
             .toolbar {
@@ -93,7 +100,27 @@ struct CalculatorView: View {
 }
 
 private extension CalculatorView {
-
+    
+    var isEngineCapacityHidden: Bool {
+        selectedEngine == .electro
+    }
+    
+    var isBenifitHidden: Bool {
+        selectedPerson == .entity || selectedEngine == .electro
+    }
+    
+    func calculate() {
+        let model = InputDataModel(
+            selectedPerson: selectedPerson,
+            selectedAge: selectedAge,
+            price: price,
+            selectedEngine: selectedEngine,
+            capacity: capacity,
+            isBenifit: benifit
+        )
+        dutyRate = calculatorService.calculate(model: model)
+        isHidden = false
+    }
 }
 
 #Preview {

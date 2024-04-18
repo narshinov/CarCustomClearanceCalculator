@@ -9,7 +9,22 @@ import SwiftUI
 
 struct FAQView: View {
     var body: some View {
-        Text("Hello, World!")
+        ScrollView {
+            VStack {
+                Text("FAQ")
+                Spacer()
+                    Link(
+                        "Политика конфиденциальности",
+                        destination: .applicationDirectory
+                    )
+                    
+                    Link(
+                        "Условия использования",
+                        destination: .applicationDirectory
+                    )
+                
+            }
+        }
     }
 }
 

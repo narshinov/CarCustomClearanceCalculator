@@ -17,6 +17,7 @@
 		07B9D7982BD05DEC00F73826 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7972BD05DEC00F73826 /* View+Extension.swift */; };
 		07B9D79A2BD05EAF00F73826 /* FAQView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7992BD05EAF00F73826 /* FAQView.swift */; };
 		07B9D7A42BD0664B00F73826 /* HideViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */; };
+		07B9D7A72BD135CF00F73826 /* CalculatorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07B9D7A62BD135CF00F73826 /* CalculatorService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		07B9D7972BD05DEC00F73826 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 		07B9D7992BD05EAF00F73826 /* FAQView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQView.swift; sourceTree = "<group>"; };
 		07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideViewModifier.swift; sourceTree = "<group>"; };
+		07B9D7A62BD135CF00F73826 /* CalculatorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		07B9D77F2BD0479000F73826 /* CarCustomCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				07B9D7A52BD135BF00F73826 /* Services */,
 				07B9D7A22BD0664000F73826 /* ViewModifiers */,
 				07B9D7962BD05DD200F73826 /* Extensions */,
 				07B9D7952BD056A800F73826 /* Info.plist */,
@@ -109,6 +112,14 @@
 				07B9D7A32BD0664B00F73826 /* HideViewModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		07B9D7A52BD135BF00F73826 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				07B9D7A62BD135CF00F73826 /* CalculatorService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 				07B9D7832BD0479000F73826 /* CalculatorView.swift in Sources */,
 				07B9D7942BD055BE00F73826 /* PersonType.swift in Sources */,
 				07B9D7812BD0479000F73826 /* CarCustomCalculatorApp.swift in Sources */,
+				07B9D7A72BD135CF00F73826 /* CalculatorService.swift in Sources */,
 				07B9D79A2BD05EAF00F73826 /* FAQView.swift in Sources */,
 				07B9D7A42BD0664B00F73826 /* HideViewModifier.swift in Sources */,
 				07B9D7982BD05DEC00F73826 /* View+Extension.swift in Sources */,
